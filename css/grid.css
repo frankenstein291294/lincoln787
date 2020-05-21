@@ -1,0 +1,460 @@
+/** ------------------
+variables para de colores
+------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 15px;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  background: rgba(26, 26, 26, 1); }
+
+/** -----------------------------------------
+ 1. estilos para el cotenedor
+ ----------------------------------------- */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+/** ------------------------------------
+2. estilos para el contenedor full
+-------------------------------------- */
+.container-full {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+/** -------------------------------------
+3. estilos para las filas
+-------------------------------------- */
+.row {
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px; }
+
+/** -------------------------------------
+4. estilos en comun para todas las columnas
+-------------------------------------- */
+.c-1, .c-2, .c-3, .c-4, .c-5, .c-6, .c-7, .c-8, .c-9, .c-10, .c-11, .c-12,
+.c-small-1, .c-small-2, .c-small-3, .c-small-4, .c-small-5, .c-small-6, .c-small-7, .c-small-8, .c-small-9, .c-small-10, .c-small-11, .c-small-12,
+.c-media-1, .c-media-2, .c-media-3, .c-media-4, .c-media-5, .c-media-6, .c-media-7, .c-media-8, .c-media-9, .c-media-10, .c-media-11, .c-media-12,
+.c-large-1, .c-large-2, .c-large-3, .c-large-4, .c-large-5, .c-large-6, .c-large-7, .c-large-8, .c-large-9, .c-large-10, .c-large-11, .c-large-12,
+.c-xlarge-1, .c-xlarge-2, .c-xlarge-3, .c-xlarge-4, .c-xlarge-5, .c-xlarge-6, .c-xlarge-7, .c-xlarge-8, .c-xlarge-9, .c-xlarge-10, .c-xlarge-11, .c-xlarge-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+/** ---------------------------------------
+5. estilos para el ancho de las columnas c
+------------------------------------------ */
+.c-1 {
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%; }
+
+.c-2 {
+  -ms-flex: 0 0 16.666666667%;
+  flex: 0 0 16.666666667%;
+  max-width: 16.666666667%; }
+
+.c-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+.c-4 {
+  -ms-flex: 0 0 33.333333333%;
+  flex: 0 0 33.333333333%;
+  max-width: 33.333333333%; }
+
+.c-5 {
+  -ms-flex: 0 0 41.6666667%;
+  flex: 0 0 41.6666667%;
+  max-width: 41.6666667%; }
+
+.c-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.c-7 {
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%; }
+
+.c-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%; }
+
+.c-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.c-10 {
+  -ms-flex: 0 0 83.3333333%;
+  flex: 0 0 83.3333333%;
+  max-width: 83.3333333%; }
+
+.c-11 {
+  -ms-flex: 0 0 91.666667%;
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%; }
+
+.c-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+/** ---------------------------------------
+5. estilos para el ancho de las columnas c-small
+------------------------------------------ */
+@media (min-width: 576px) {
+  .c-small-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+
+  .c-small-2 {
+    -ms-flex: 0 0 16.666666667%;
+    flex: 0 0 16.666666667%;
+    max-width: 16.666666667%; }
+
+  .c-small-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+
+  .c-small-4 {
+    -ms-flex: 0 0 33.333333333%;
+    flex: 0 0 33.333333333%;
+    max-width: 33.333333333%; }
+
+  .c-small-5 {
+    -ms-flex: 0 0 41.6666667%;
+    flex: 0 0 41.6666667%;
+    max-width: 41.6666667%; }
+
+  .c-small-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  .c-small-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+
+  .c-small-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+
+  .c-small-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+
+  .c-small-10 {
+    -ms-flex: 0 0 83.3333333%;
+    flex: 0 0 83.3333333%;
+    max-width: 83.3333333%; }
+
+  .c-small-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+
+  .c-small-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+/** ---------------------------------------
+6. estilos para el ancho de las columnas c-media
+------------------------------------------ */
+@media (min-width: 768px) {
+  .c-media-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+
+  .c-media-2 {
+    -ms-flex: 0 0 16.666666667%;
+    flex: 0 0 16.666666667%;
+    max-width: 16.666666667%; }
+
+  .c-media-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+
+  .c-media-4 {
+    -ms-flex: 0 0 33.333333333%;
+    flex: 0 0 33.333333333%;
+    max-width: 33.333333333%; }
+
+  .c-media-5 {
+    -ms-flex: 0 0 41.6666667%;
+    flex: 0 0 41.6666667%;
+    max-width: 41.6666667%; }
+
+  .c-media-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  .c-media-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+
+  .c-media-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+
+  .c-media-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+
+  .c-media-10 {
+    -ms-flex: 0 0 83.3333333%;
+    flex: 0 0 83.3333333%;
+    max-width: 83.3333333%; }
+
+  .c-media-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+
+  .c-media-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+/** ---------------------------------------
+7. estilos para el ancho de las columnas c-large
+------------------------------------------ */
+@media (min-width: 768px) {
+  .c-large-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+
+  .c-large-2 {
+    -ms-flex: 0 0 16.666666667%;
+    flex: 0 0 16.666666667%;
+    max-width: 16.666666667%; }
+
+  .c-large-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+
+  .c-large-4 {
+    -ms-flex: 0 0 33.333333333%;
+    flex: 0 0 33.333333333%;
+    max-width: 33.333333333%; }
+
+  .c-large-5 {
+    -ms-flex: 0 0 41.6666667%;
+    flex: 0 0 41.6666667%;
+    max-width: 41.6666667%; }
+
+  .c-large-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  .c-large-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+
+  .c-large-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+
+  .c-large-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+
+  .c-large-10 {
+    -ms-flex: 0 0 83.3333333%;
+    flex: 0 0 83.3333333%;
+    max-width: 83.3333333%; }
+
+  .c-large-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+
+  .c-large-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+/** ---------------------------------------
+8. estilos para el ancho de las columnas c-xlarge
+------------------------------------------ */
+@media (min-width: 768px) {
+  .c-xlarge-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+
+  .c-xlarge-2 {
+    -ms-flex: 0 0 16.666666667%;
+    flex: 0 0 16.666666667%;
+    max-width: 16.666666667%; }
+
+  .c-xlarge-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+
+  .c-xlarge-4 {
+    -ms-flex: 0 0 33.333333333%;
+    flex: 0 0 33.333333333%;
+    max-width: 33.333333333%; }
+
+  .c-xlarge-5 {
+    -ms-flex: 0 0 41.6666667%;
+    flex: 0 0 41.6666667%;
+    max-width: 41.6666667%; }
+
+  .c-xlarge-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+
+  .c-xlarge-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+
+  .c-xlarge-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+
+  .c-xlarge-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+
+  .c-xlarge-10 {
+    -ms-flex: 0 0 83.3333333%;
+    flex: 0 0 83.3333333%;
+    max-width: 83.3333333%; }
+
+  .c-xlarge-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+
+  .c-xlarge-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
+/** ---------------------------------------
+9. estilos para boton principal
+------------------------------------------ */
+.btn {
+  font-family: 'Chilanka', cursive;
+  display: flex;
+  font-weight: 900;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 10px;
+  align-items: center;
+  justify-content: center; }
+
+.btn-principal {
+  background-color: #045dbd;
+  color: #fff;
+  width: 100%; }
+
+.btn-principal:hover {
+  background-color: #3a77b9; }
+
+.form {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.container-form {
+  text-align: center;
+  margin: auto;
+  max-width: 600px; }
+
+.container-form .formulario {
+  position: relative;
+  padding: 20px;
+  box-shadow: 3px 3px 15px -2px rgba(0, 0, 0, 0.5); }
+
+.group-form {
+  position: relative;
+  width: 100%;
+  border-top: 5px;
+  display: flex;
+  padding: 5px;
+  align-items: stretch;
+  overflow: hidden; }
+
+.prepend {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  margin-right: -1px;
+  background-color: #cecece;
+  border-radius: 5px 0 0 5px; }
+
+.control-form {
+  font-family: 'Chilanka', cursive;
+  display: block;
+  width: 100%;
+  /* height: calc(1.5em + .75rem + 2px);*/
+  padding: .375rem .75rem;
+  font-weight: 900;
+  line-height: 1.5;
+  background-clip: padding-box;
+  transition: border-color .14s ease-in-out, box-shadow .15s ease-in-out; }
+
+.error {
+  color: #D80009; }
+
+.success {
+  color: #009537; }
+
+.img-responsive {
+  width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=grid.css.map */
